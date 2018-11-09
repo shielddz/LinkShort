@@ -1,0 +1,8 @@
+<div class="container">
+    {{#if error}}
+        <div class="alert alert-warning">{{{error}}}</div>
+    {{/if}}
+    <h1>The result:</h1>
+    {{!-- i'll need to change the 127.0.0.1:1337 with the current host url --}}
+    <a href="../{{{short}}}">127.0.0.1:1337/{{{short}}}</a>
+</div>

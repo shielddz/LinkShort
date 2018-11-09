@@ -1,0 +1,16 @@
+<div class="container">
+    {{#if error}}
+        <div class="alert alert-danger">{{{error}}}</div>
+    {{/if}}
+    <form method='post' action='/api/'>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Link(required)</label>
+            <input type="text" class="form-control" placeholder="Long url" name="url" required>
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Costumized ?</label>
+            <input type="text" class="form-control" placeholder="Costume url" name="short">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
